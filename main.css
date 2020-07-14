@@ -51,7 +51,6 @@ section {
 	background-size: cover;
     padding: 23em 0em 23em;
     color: #ffffff;
-    text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
                 0 1px 25px rgba(0, 0, 0, .75);
 }
@@ -69,6 +68,7 @@ section::before {
 #section--home {
     position: relative;
     background-image: url(./img/ogp.jpg);
+    text-align: center;
 }
 
 section h1 {
@@ -92,11 +92,72 @@ section p {
 
 #section--career {
     position: relative;
-    background-image: url(./img/bridge.jpg);
+    background-image: url(./img/career.jpg);
+    text-align: center;
 }
 
 #section--favorite {
     position: relative;
     background-image: url(./img/favorite.jpg);
+    text-align: center;
 }
 
+#section--photos {
+    padding: 6em 0em 6em;
+    position: relative;
+    background-image: url(./img/photos.jpg);
+}
+
+#section--photos div {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+#section--photos img {
+    border-radius: 0.2rem;
+    position: relative;
+    display: inline;
+    margin: 20px 20px;
+}
+
+#section--game {
+    padding: 14em 0 12em;
+    position: relative;
+    background-image: url(./img/game.jpg);
+    text-align: center;
+}
+
+#description {
+    position: relative;
+    margin: 20px auto;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#description a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+#section--game table {
+    margin: 0 auto;
+}
+
+#section--game td {
+    position: relative;
+    border: 10px solid white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#reset {
+    position: relative;
+    margin: 20px auto;
+    padding: 5px;
+    font-size: 20px;
+}
