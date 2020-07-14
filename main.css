@@ -1,0 +1,102 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    padding-top: 60px;
+}
+
+/* HEADER */
+
+header .menu {
+    display: grid;
+    grid-template-rows: repeat(1, 60px);
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color:rgb(255, 255, 255);
+}
+
+header .menu li {
+    padding: 20px;
+    text-align: center;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .menu li a:hover {
+    color: rgb(185, 183, 183);
+}
+
+
+/* ARTICLE */
+section {
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+    padding: 23em 0em 23em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
+                0 1px 25px rgba(0, 0, 0, .75);
+}
+
+section::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+#section--home {
+    position: relative;
+    background-image: url(./img/ogp.jpg);
+}
+
+section h1 {
+    position: relative;
+    font-size: 50px;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 500px;
+    border-bottom: 1px solid #bcbcbc;
+    margin: 20px auto;
+}
+
+section p {
+    position: relative;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#section--career {
+    position: relative;
+    background-image: url(./img/bridge.jpg);
+}
+
+#section--favorite {
+    position: relative;
+    background-image: url(./img/favorite.jpg);
+}
+
