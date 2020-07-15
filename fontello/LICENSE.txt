@@ -19,6 +19,15 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
+## Elusive
+
+   Copyright (C) 2013 by Aristeides Stathopoulos
+
+   Author:    Aristeides Stathopoulos
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://aristeides.com/
+
+
 ## Brandico
 
    (C) 2012 by Vitaly Puzrin
