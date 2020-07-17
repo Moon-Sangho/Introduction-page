@@ -22,7 +22,7 @@ section p {
 
 /* HOME */
 #section--home {
-    padding: 12em 0em 15em;
+    padding: 2em 0em 10em;
 }
 
 #section--home img {
@@ -39,10 +39,14 @@ section p {
     font-size: 20px;
 }
 
+/* CAREER */
+#section--career {
+    padding: 4em 0em 12em;
+}
 
 /* FAVORITE */
 #section--favorite {
-    padding: 16em 0em 15em;
+    padding: 4em 0em 15em;
 }
 
 
@@ -53,4 +57,9 @@ section p {
 
 #section--photos img {
     margin: 20px 0;
+}
+
+/* GAME */
+#section--game {
+    padding: 2em 0 10em;
 }
