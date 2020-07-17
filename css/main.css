@@ -11,8 +11,8 @@ body {
     padding-top: 60px;
 }
 
-/* HEADER */
-header .menu {
+/* NAVIGATION */
+nav .menu {
     display: grid;
     grid-template-rows: repeat(1, 60px);
     grid-template-columns: repeat(5, 1fr);
@@ -26,22 +26,27 @@ header .menu {
     background-color:rgb(255, 255, 255);
 }
 
-header .menu li {
+nav .menu li {
     text-align: center;
 }
 
-header .menu li a {
+/* border-bottom 테스트용 */
+/* nav .menu .menu-border-bottom {
+    border-bottom: 0.5rem solid rgb(185, 183, 183);
+} */
+
+nav .menu li a {
     text-decoration: none;
     color: #333;
     display: block;
     padding: 20px;
 }
 
-header .menu li:hover {
+nav .menu li:hover {
     border-bottom: 0.5rem solid rgb(185, 183, 183);
 }
 
-header .menu li a:hover {
+nav .menu li a:hover {
     color: rgb(185, 183, 183);
 }
 
@@ -94,9 +99,9 @@ section p {
 /* HOME */
 #section--home {
     position: relative;
-    background-image: url(./img/ogp.jpg);
+    background-image: url(../img/ogp.jpg);
     text-align: center;
-    padding: 10em 0em 23em;
+    padding: 10em 0em 15em;
 }
 
 #section--home img {
@@ -107,7 +112,7 @@ section p {
     background-color: rgba(255,255,255,.08);
 }
 
-#section--home .icons li {
+#section--home .social-icons li {
     display: inline-flex;
     border-radius: 100%;
     border: 1px solid rgba(255,255,255,.25);
@@ -120,7 +125,11 @@ section p {
     margin-top: 1.5rem;
 }
 
-#section--home .icons li a {
+#section--home .social-icons li:hover {
+    background-color: rgba(255,255,255,.2);
+}
+
+#section--home .social-icons li a {
     position: relative;
     color: rgba(255,255,255,.5);
     text-decoration: none;
@@ -132,27 +141,26 @@ section p {
 /* CAREER */
 #section--career {
     position: relative;
-    background-image: url(./img/career.jpg);
+    background-image: url(../img/career.jpg);
     text-align: center;
 }
 
 /* FAVORITE */
 #section--favorite {
     position: relative;
-    background-image: url(./img/favorite.jpg);
+    background-image: url(../img/favorite.jpg);
     text-align: center;
 }
 
 /* PHOTOS */
 #section--photos {
-    padding: 2em 0em 3em;
+    padding: 2em 0em 4em;
     position: relative;
-    background-image: url(./img/photos.jpg);
+    background-image: url(../img/photos.jpg);
 }
 
 #section--photos div {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -165,17 +173,18 @@ section p {
 
 /* GAME */
 #section--game {
-    padding: 12em 0 12em;
+    padding: 8em 0 10em;
     position: relative;
-    background-image: url(./img/game.jpg);
+    background-image: url(../img/game.jpg);
     text-align: center;
 }
 
-#description {
+#section--game button {
+    border-radius: 4px;
     position: relative;
     margin: 20px auto;
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #description a {
@@ -196,11 +205,4 @@ section p {
     text-align: center;
     font-weight: bold;
     font-size: 100px;
-}
-
-#reset {
-    position: relative;
-    margin: 20px auto;
-    padding: 5px;
-    font-size: 20px;
 }

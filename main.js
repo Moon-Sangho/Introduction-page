@@ -20,7 +20,7 @@ const marking = function(event) {
         console.log('Empty');
         tds[trNumber][tdNumber].textContent = turn;
 
-        // 세 칸 다 채워졌나?
+        // 세 칸 다 채워졌는지 검사
         let threeTd = false;
 
         // 가로줄 검사
@@ -100,6 +100,8 @@ for (let k = 0; k < 9; k++) {
     td.addEventListener('click', marking);
 };
 
+
+// 리셋버튼
 const resetBtn = document.getElementById('reset');
 
 resetBtn.addEventListener('click', function() {
@@ -112,3 +114,78 @@ resetBtn.addEventListener('click', function() {
 });
 
 console.log(trs, tds);
+
+
+// 아래는 스크롤 위치에 따라 menu button에 border-bottom line이 들어가도록 만들어본 기능들이지만, 문제점도 많고 스스로 맘에 들지 않아 주석 처리 해둠. 
+// 추후 scrollSpy 기능을 이용해서 업데이트 예정임
+
+// 테스트 전에
+// nav ul li에 menu1 ~ menu5 id 추가,
+// nav ul li first child에 class="menu-border-bottom" 하나 추가,
+// css에 nav .menu .menu-border-bottom 주석 처리한것 활성화 시킨 뒤 해야 함
+
+// const menu1 = document.getElementById('menu1');
+// const menu2 = document.getElementById('menu2');
+// const menu3 = document.getElementById('menu3');
+// const menu4 = document.getElementById('menu4');
+// const menu5 = document.getElementById('menu5');
+
+// function borderBottom1() {
+//     'use strict';
+//     if (window.scrollY > -1000 && window.scrollY < 1100) {
+//         menu1.classList.add('menu-border-bottom');
+//         menu2.classList.remove('menu-border-bottom');
+//         menu3.classList.remove('menu-border-bottom');
+//         menu4.classList.remove('menu-border-bottom');
+//         menu5.classList.remove('menu-border-bottom');
+//         console.log(window.scrollY);
+//     } else {
+//         menu1.classList.remove('menu-border-bottom');
+//     }
+// }
+
+// function borderBottom2() {
+//     'use strict';
+//     if (window.scrollY >= 1100 && window.scrollY < 2100) {
+//         menu2.classList.add('menu-border-bottom');
+//         console.log(window.scrollY);
+//     } else {
+//         menu2.classList.remove('menu-border-bottom');
+//     }
+// }
+
+// function borderBottom3() {
+//     'use strict';
+//     if (window.scrollY >= 2100 && window.scrollY < 3100) {
+//         menu3.classList.add('menu-border-bottom');
+//         console.log(window.scrollY);
+//     } else {
+//         menu3.classList.remove('menu-border-bottom');
+//     }
+// }
+
+// function borderBottom4() {
+//     'use strict';
+//     if (window.scrollY >= 3100 && window.scrollY < 4100) {
+//         menu4.classList.add('menu-border-bottom');
+//         console.log(window.scrollY);
+//     } else {
+//         menu4.classList.remove('menu-border-bottom');
+//     }
+// }
+
+// function borderBottom5() {
+//     'use strict';
+//     if (window.scrollY >= 4100 && window.scrollY < 5100) {
+//         menu5.classList.add('menu-border-bottom');
+//         console.log(window.scrollY);
+//     } else {
+//         menu5.classList.remove('menu-border-bottom');
+//     }
+// }
+
+// window.addEventListener('scroll', borderBottom1);
+// window.addEventListener('scroll', borderBottom2);
+// window.addEventListener('scroll', borderBottom3);
+// window.addEventListener('scroll', borderBottom4);
+// window.addEventListener('scroll', borderBottom5);
