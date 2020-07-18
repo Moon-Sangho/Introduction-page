@@ -1,4 +1,9 @@
+* output
 https://moon-sangho.github.io/introduction-page/
+
+* review
+https://velog.io/@devmoonsh/Project-1-Introduction-page
+
 
 1. og:title 내용 변경
 2. og:url 주소 추가
